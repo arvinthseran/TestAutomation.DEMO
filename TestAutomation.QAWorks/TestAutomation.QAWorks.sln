@@ -3,7 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAutomation.QAWorks.Web.Driver", "TestAutomation.QAWorks.Web.Driver\TestAutomation.QAWorks.Web.Driver.csproj", "{87BAD299-7DEE-45DE-8780-D3F29D7C4334}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAutomation.QAWorks.Web.Test", "TestAutomation.QAWorks.Web.Test\TestAutomation.QAWorks.Web.Test.csproj", "{C4658C63-40A9-4E3B-BFD5-EF275BA430E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAutomation.QAWorks.Web.Steps", "TestAutomation.QAWorks.Web.Steps\TestAutomation.QAWorks.Web.Steps.csproj", "{BCD4A794-C690-4060-828C-C892EF3D4B37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAutomation.QAWorks.Web.Pages", "TestAutomation.QAWorks.Web.Pages\TestAutomation.QAWorks.Web.Pages.csproj", "{A7A878F4-BB8E-4F14-9C75-22C171BA5B8D}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87BAD299-7DEE-45DE-8780-D3F29D7C4334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87BAD299-7DEE-45DE-8780-D3F29D7C4334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87BAD299-7DEE-45DE-8780-D3F29D7C4334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87BAD299-7DEE-45DE-8780-D3F29D7C4334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4658C63-40A9-4E3B-BFD5-EF275BA430E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4658C63-40A9-4E3B-BFD5-EF275BA430E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4658C63-40A9-4E3B-BFD5-EF275BA430E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4658C63-40A9-4E3B-BFD5-EF275BA430E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCD4A794-C690-4060-828C-C892EF3D4B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCD4A794-C690-4060-828C-C892EF3D4B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCD4A794-C690-4060-828C-C892EF3D4B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCD4A794-C690-4060-828C-C892EF3D4B37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7A878F4-BB8E-4F14-9C75-22C171BA5B8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7A878F4-BB8E-4F14-9C75-22C171BA5B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7A878F4-BB8E-4F14-9C75-22C171BA5B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7A878F4-BB8E-4F14-9C75-22C171BA5B8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
