@@ -139,16 +139,18 @@ testRunner.Then("Information should be Submitted Successfully", ((string)(null))
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Can Not Submit without Name")]
+        [NUnit.Framework.CategoryAttribute("005")]
         public virtual void CanNotSubmitWithoutName()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Can Not Submit without Name", ((string[])(null)));
-#line 32
-this.ScenarioSetup(scenarioInfo);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Can Not Submit without Name", new string[] {
+                        "005"});
 #line 33
-testRunner.Given("I\'m on the QAWorks website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 34
-testRunner.When("I accidentally leave Name field empty", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.Given("I\'m on the QAWorks website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 35
+testRunner.When("I accidentally leave Name field empty", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 36
 testRunner.Then("I should see following error Your name is required", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -156,16 +158,18 @@ testRunner.Then("I should see following error Your name is required", ((string)(
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Can Not Submit without Email")]
+        [NUnit.Framework.CategoryAttribute("006")]
         public virtual void CanNotSubmitWithoutEmail()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Can Not Submit without Email", ((string[])(null)));
-#line 37
-this.ScenarioSetup(scenarioInfo);
-#line 38
-testRunner.Given("I\'m on the QAWorks website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Can Not Submit without Email", new string[] {
+                        "006"});
 #line 39
-testRunner.When("I accidentally leave Email field empty", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+this.ScenarioSetup(scenarioInfo);
 #line 40
+testRunner.Given("I\'m on the QAWorks website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 41
+testRunner.When("I accidentally leave Email field empty", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 42
 testRunner.Then("I should see following error An Email address is required", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -173,16 +177,18 @@ testRunner.Then("I should see following error An Email address is required", ((s
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Can Not Submit without Message")]
+        [NUnit.Framework.CategoryAttribute("007")]
         public virtual void CanNotSubmitWithoutMessage()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Can Not Submit without Message", ((string[])(null)));
-#line 42
-this.ScenarioSetup(scenarioInfo);
-#line 43
-testRunner.Given("I\'m on the QAWorks website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 44
-testRunner.When("I accidentally leave Message field empty", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Can Not Submit without Message", new string[] {
+                        "007"});
 #line 45
+this.ScenarioSetup(scenarioInfo);
+#line 46
+testRunner.Given("I\'m on the QAWorks website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 47
+testRunner.When("I accidentally leave Message field empty", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 48
 testRunner.Then("I should see following error Please type your message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -190,16 +196,18 @@ testRunner.Then("I should see following error Please type your message", ((strin
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Warning message is displayed when I enter an Invalid Email address")]
+        [NUnit.Framework.CategoryAttribute("008")]
         public virtual void WarningMessageIsDisplayedWhenIEnterAnInvalidEmailAddress()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Warning message is displayed when I enter an Invalid Email address", ((string[])(null)));
-#line 47
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Warning message is displayed when I enter an Invalid Email address", new string[] {
+                        "008"});
+#line 51
 this.ScenarioSetup(scenarioInfo);
-#line 48
+#line 52
 testRunner.Given("I\'m on the QAWorks website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 49
+#line 53
 testRunner.When("I accidentally enter an invalid email address", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 50
+#line 54
 testRunner.Then("I should see following error Invalid Email Address", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -207,12 +215,14 @@ testRunner.Then("I should see following error Invalid Email Address", ((string)(
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Can Not Submit with Invalid Email Address")]
+        [NUnit.Framework.CategoryAttribute("009")]
         public virtual void CanNotSubmitWithInvalidEmailAddress()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Can Not Submit with Invalid Email Address", ((string[])(null)));
-#line 52
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Can Not Submit with Invalid Email Address", new string[] {
+                        "009"});
+#line 57
 this.ScenarioSetup(scenarioInfo);
-#line 53
+#line 58
 testRunner.Given("I\'m on the QAWorks website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
@@ -227,9 +237,9 @@ testRunner.Given("I\'m on the QAWorks website", ((string)(null)), ((TechTalk.Spe
             table3.AddRow(new string[] {
                         "Messsage",
                         "please contact me"});
-#line 54
-testRunner.When("I contact QAWorks with the following information", ((string)(null)), table3, "When ");
 #line 59
+testRunner.When("I contact QAWorks with the following information", ((string)(null)), table3, "When ");
+#line 64
 testRunner.Then("I should see following error Invalid Email Address", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -237,18 +247,41 @@ testRunner.Then("I should see following error Invalid Email Address", ((string)(
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("All Fields should be cleared after submission")]
+        [NUnit.Framework.CategoryAttribute("010")]
         public virtual void AllFieldsShouldBeClearedAfterSubmission()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("All Fields should be cleared after submission", ((string[])(null)));
-#line 61
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("All Fields should be cleared after submission", new string[] {
+                        "010"});
+#line 67
 this.ScenarioSetup(scenarioInfo);
-#line 62
+#line 68
 testRunner.Given("I\'m on the QAWorks website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 63
+#line 69
 testRunner.When("I contact QAWorks", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 64
+#line 70
 testRunner.Then("Information should be Submitted Successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 65
+#line 71
+testRunner.And("All fields should be cleared", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Can Submit multiple email address")]
+        [NUnit.Framework.CategoryAttribute("011")]
+        public virtual void CanSubmitMultipleEmailAddress()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Can Submit multiple email address", new string[] {
+                        "011"});
+#line 74
+this.ScenarioSetup(scenarioInfo);
+#line 75
+testRunner.Given("I\'m on the QAWorks website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 76
+testRunner.When("I contact QAWorks using multiple email address", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 77
+testRunner.Then("Information should be Submitted Successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 78
 testRunner.And("All fields should be cleared", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();

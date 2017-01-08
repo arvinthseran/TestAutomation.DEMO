@@ -1,5 +1,4 @@
-﻿
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 
 namespace TestAutomation.QAWorks.Web.Driver.Extension
 {

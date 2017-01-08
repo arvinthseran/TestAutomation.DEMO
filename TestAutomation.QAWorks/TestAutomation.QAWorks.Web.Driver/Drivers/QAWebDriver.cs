@@ -28,7 +28,7 @@ namespace TestAutomation.QAWorks.Web.Driver.Drivers
           get { return WebDriver.Capabilities.BrowserName; }   
         }
 
-        public virtual void GoToURL(string url)
+        public void GoToURL(string url)
         {
             WebDriver.Navigate().GoToUrl(url);
         }
@@ -61,7 +61,7 @@ namespace TestAutomation.QAWorks.Web.Driver.Drivers
             }
         }
 
-        internal void WaitforElementTobeDisplayedAndEnabled(IWebElement webelement)
+        private void WaitforElementTobeDisplayedAndEnabled(IWebElement webelement)
         {
             var webDriverWait = new WebDriverWait(WebDriver, TimeSpan.FromSeconds(_defaultTimeOutinSec));
 

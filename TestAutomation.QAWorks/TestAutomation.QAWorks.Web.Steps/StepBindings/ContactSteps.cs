@@ -28,19 +28,27 @@ namespace TestAutomation.QAWorks.Web.Steps.StepBindings
         [When(@"I contact QAWorks")]
         public void WhenIContactQAWorks()
         {
-            string[] header = { "Name", "Email", "Messsage" };
             string[] row = { "j.Bloggs", "j.Bloggs@qaworks.com", "Messsage to send" };
-            Table table = new Table(header);
+            Table table = CreateTableWithHeaders();
             table.AddRow(row);
             When("I contact QAWorks with the following information", table);
         }
 
+        [When(@"I contact QAWorks using multiple email address")]
+        public void WhenIContactQAWorksUsingMultipleEmailAddress()
+        {
+            string[] row = { "j.Bloggs", "j.Bloggs@qaworks.com,groupemail@qaworks.com", "Messsage to send" };
+            Table table = CreateTableWithHeaders();
+            table.AddRow(row);
+            When("I contact QAWorks with the following information", table);
+        }
+
+
         [When(@"I accidentally leave (Name|Email|Message) field empty")]
         public void WhenIAccidentallyLeaveFieldEmpty(string field)
         {
-            string[] header = { "Name", "Email", "Messsage" };
             string[] row = { "j.Bloggs", "j.Bloggs@qaworks.com", "Messsage to send" };
-            Table table = new Table(header);
+            Table table = CreateTableWithHeaders();
             table.AddRow(row);
 
             switch (field)
@@ -66,6 +74,11 @@ namespace TestAutomation.QAWorks.Web.Steps.StepBindings
             var homePage = _objectContainer.Resolve<HomePage>();
             var contactPage = homePage.NavigatetoContactPage();
             contactPage.FillContactForm("j.Bloggs", "j.Bloggs", "Please Contact Me");
+        }
+
+        private Table CreateTableWithHeaders()
+        {
+            return new Table(new string[] { "Name", "Email", "Messsage" });
         }
     }
 }
