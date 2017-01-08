@@ -1,10 +1,10 @@
 ﻿using System;
-using OpenQA.Selenium.Remote;
-using TestAutomation.QAWorks.Web.Driver.Interface;
-using OpenQA.Selenium.Support.Extensions;
 using System.Drawing.Imaging;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
+using OpenQA.Selenium.Support.Extensions;
+using TestAutomation.QAWorks.Web.Driver.Interface;
 
 namespace TestAutomation.QAWorks.Web.Driver.Drivers
 {
@@ -34,7 +34,8 @@ namespace TestAutomation.QAWorks.Web.Driver.Drivers
 
         public void Click(IWebElement webelement)
         {
-
+            WaitforElementTobeDisplayedAndEnabled(webelement);
+            webelement.Click();
         }
 
         public void WaitUntilDocIsReady()
@@ -58,6 +59,15 @@ namespace TestAutomation.QAWorks.Web.Driver.Drivers
                 throw new Exception(string.Format("{0} occured in TakeScreenshot", screenshotException.Message));
             }
         }
+
+        private void WaitforElementTobeDisplayedAndEnabled(IWebElement webelement)
+        {
+            var webDriverWait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(_defaultTimeOutinSec));
+
+            webDriverWait.IgnoreExceptionTypes(typeof(StaleElementReferenceException));
+
+            webDriverWait.Until((webDriver) => ((webelement.Displayed && webelement.Enabled) == true));
+        }        
 
         #region IDisposable Support
         private bool disposedValue = false; // To detect redundant calls

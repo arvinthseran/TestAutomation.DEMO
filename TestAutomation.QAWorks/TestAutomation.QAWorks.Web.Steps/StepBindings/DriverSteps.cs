@@ -54,14 +54,14 @@ namespace TestAutomation.QAWorks.Web.Steps.StepBindings
         {
            var webDriver= _objectContainer.Resolve<IQAWebDriver>();
 
-            webDriver.TakeScreenshot(string.Format("{0}{3}-{1}-{2}.jpeg", "C:\\",
+            webDriver?.TakeScreenshot(string.Format("{0}{3}-{1}-{2}.jpeg", "C:\\",
                    ScenarioContext.Current.ScenarioInfo.Title.Replace(" ", ""),
                    DateTime.Now.ToString("ddMMyyyyHHmm"),
                    webDriver.browserName));
         }
 
         [StepArgumentTransformation(@"using (Chrome|FireFox|InternetExplorer|PhantomJS)")]
-        public WebDriverInstanceType InWebDriverInstanceTypeTransform(WebDriverInstanceType browser)
+        public WebDriverInstanceType WebDriverInstanceTypeTransform(WebDriverInstanceType browser)
         {
             return browser;
         }

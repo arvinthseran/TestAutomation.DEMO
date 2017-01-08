@@ -1,34 +1,18 @@
 ﻿using BoDi;
-using System.Collections.Generic;
-using System.Linq;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
-using TestAutomation.QAWorks.Web.Driver.Interface;
-using TestAutomation.QAWorks.Web.Pages;
 using TestAutomation.QAWorks.Web.Pages.PageObjects;
 
 namespace TestAutomation.QAWorks.Web.Steps.StepBindings
 {
     [Binding]
-    public class ContactSteps
+    public class ContactSteps : TechTalk.SpecFlow.Steps
     {
-        private IQAWebDriver driver;
-
         private readonly IObjectContainer _objectContainer;
 
         public ContactSteps(IObjectContainer objectContainer)
         {
             _objectContainer = objectContainer;
-            driver = _objectContainer.Resolve<IQAWebDriver>();
-        }
-
-        [Given(@"I'm on the QAWorks website")]
-        public void GivenIMOnTheQAWorksWebsite()
-        {
-            var qaWorksuri = _objectContainer.Resolve<QAWorksUri>();
-            MainPage mainPage = new MainPage(driver);
-            var homePage = mainPage.Navigate(qaWorksuri.mainUrl);
-            _objectContainer.RegisterInstanceAs(homePage);
         }
 
         [When(@"I contact QAWorks with the following information")]
@@ -37,13 +21,51 @@ namespace TestAutomation.QAWorks.Web.Steps.StepBindings
             var homePage = _objectContainer.Resolve<HomePage>();
             var contactPage = homePage.NavigatetoContactPage();
             dynamic contactDetails = table.CreateDynamicInstance();
-            contactPage.SendAMessage(contactDetails.Name, contactDetails.Email, contactDetails.Messsage);
+            var postSubmissionPage = contactPage.SendAMessage(contactDetails.Name, contactDetails.Email, contactDetails.Messsage);
+            _objectContainer.RegisterInstanceAs(postSubmissionPage);
         }
 
-        [Then(@"Information should be Submitted Successfully")]
-        public void ThenInformationShouldBeSubmittedSuccessfully()
+        [When(@"I contact QAWorks")]
+        public void WhenIContactQAWorks()
         {
-            
+            string[] header = { "Name", "Email", "Messsage" };
+            string[] row = { "j.Bloggs", "j.Bloggs@qaworks.com", "Messsage to send" };
+            Table table = new Table(header);
+            table.AddRow(row);
+            When("I contact QAWorks with the following information", table);
+        }
+
+        [When(@"I accidentally leave (Name|Email|Message) field empty")]
+        public void WhenIAccidentallyLeaveFieldEmpty(string field)
+        {
+            string[] header = { "Name", "Email", "Messsage" };
+            string[] row = { "j.Bloggs", "j.Bloggs@qaworks.com", "Messsage to send" };
+            Table table = new Table(header);
+            table.AddRow(row);
+
+            switch (field)
+            {
+                case "Name":
+                    row[0] = string.Empty;
+                    break;
+                case "Email":
+                    row[1] = string.Empty;
+                    break;
+                case "Message":
+                    row[2] = string.Empty;
+                    break;
+                default:
+                    break;
+            }
+            When("I contact QAWorks with the following information", table);
+        }
+        
+        [When(@"I accidentally enter an invalid email address")]
+        public void WhenIAccidentallyEnterAnInvalidEmailAddress()
+        {
+            var homePage = _objectContainer.Resolve<HomePage>();
+            var contactPage = homePage.NavigatetoContactPage();
+            contactPage.FillContactForm("j.Bloggs", "j.Bloggs", "Please Contact Me");
         }
     }
 }

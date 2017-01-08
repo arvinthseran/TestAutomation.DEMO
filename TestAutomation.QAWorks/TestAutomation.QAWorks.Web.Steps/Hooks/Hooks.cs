@@ -35,7 +35,7 @@ namespace TestAutomation.QAWorks.Web.Steps.StepBindings
         [BeforeScenario]
         public void BeforeScenario()
         {
-            _objectContainer.RegisterInstanceAs(new QAWorksUri { mainUrl = url });
+            _objectContainer.RegisterInstanceAs(new QAWorksUri { MainUrl = url });
         }
 
         [BeforeScenario Scope(Tag = "Chrome")]
@@ -65,10 +65,7 @@ namespace TestAutomation.QAWorks.Web.Steps.StepBindings
         [AfterScenario(Order = 0)]
         public void AfterScenario()
         {
-            if (ScenarioContext.Current.TestError != null)
-            {
-                Given(@"I take a screenshot");
-            }  
+            Given(@"I take a screenshot");
         }
 
         [AfterScenario(Order = 1)]

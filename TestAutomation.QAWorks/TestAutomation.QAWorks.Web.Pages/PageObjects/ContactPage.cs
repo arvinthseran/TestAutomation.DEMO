@@ -1,31 +1,37 @@
-﻿
+﻿using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using TestAutomation.QAWorks.Web.Driver.Interface;
 using TestAutomation.QAWorks.Web.Driver.Extension;
-using System;
 
 namespace TestAutomation.QAWorks.Web.Pages.PageObjects
 {
-    public sealed class ContactPage : Base
+    public class ContactPage : Base
     {
         public ContactPage(IQAWebDriver qaWebDriver) : base(qaWebDriver)
         {
         }
 
         [FindsBy(How = How.Id, Using = "ctl00_MainContent_NameBox")]
-        private IWebElement txtNameBox { get; set; }
+        internal IWebElement txtNameBox { get; set; }
 
         [FindsBy(How = How.CssSelector, Using = "input#ctl00_MainContent_EmailBox")]
-        private IWebElement txtEmailBox { get; set; }
+        internal IWebElement txtEmailBox { get; set; }
 
         [FindsBy(How = How.CssSelector, Using = "textarea#ctl00_MainContent_MessageBox")]
-        private IWebElement txtMessageBox { get; set; }
+        internal IWebElement txtMessageBox { get; set; }
 
-        [FindsBy(How = How.CssSelector, Using = "input#ctl00_MainContent_SendButton")]
-        private IWebElement btnSend { get; set; }
+        [FindsBy(How = How.CssSelector, Using = ".SendButton")]
+        private IWebElement _btnSend { get; set; }
 
-        public void SendAMessage(string name, string email, string message)
+        public PostSubmissionPage SendAMessage(string name, string email, string message)
+        {
+            FillContactForm(name, email, message);
+            driver.Click(_btnSend);
+            return new PostSubmissionPage(driver);
+        }
+
+        public void FillContactForm(string name, string email, string message)
         {
             txtNameBox.Type(name);
             txtEmailBox.Type(email);

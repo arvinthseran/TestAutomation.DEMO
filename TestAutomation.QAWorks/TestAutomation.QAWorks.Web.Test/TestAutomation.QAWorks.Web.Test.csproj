@@ -52,10 +52,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Features\ContactPage1.feature.cs">
+    <Compile Include="Features\ContactPage.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ContactPage.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\MultipleBrowser.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MultipleBrowser.feature</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -63,7 +68,11 @@
     <None Include="App.config" />
     <None Include="Features\ContactPage.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>ContactPage1.feature.cs</LastGenOutput>
+      <LastGenOutput>ContactPage.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\MultipleBrowser.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MultipleBrowser.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

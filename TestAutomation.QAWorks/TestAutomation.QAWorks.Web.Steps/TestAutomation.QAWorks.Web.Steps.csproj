@@ -66,6 +66,8 @@
     <Compile Include="Hooks\Hooks.cs" />
     <Compile Include="StepBindings\ContactSteps.cs" />
     <Compile Include="StepBindings\DriverSteps.cs" />
+    <Compile Include="StepBindings\HomeSteps.cs" />
+    <Compile Include="StepBindings\PostSubmissionSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
