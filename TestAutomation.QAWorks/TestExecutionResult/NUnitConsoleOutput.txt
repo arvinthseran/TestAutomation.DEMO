@@ -1,0 +1,90 @@
+
+C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestExecutionResult>"C:\Users\arvin\Google Drive\VisualStudioSolutions\YourLogo\packages\NUnit.ConsoleRunner.3.5.0\tools\nunit3-console" "C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestAutomation.QAWorks.Web.Test\bin\Debug\TestAutomation.QAWorks.Web.Test.dll" --labels=On --out=TestResult.txt --result=nunit2
+NUnit Console Runner 3.5.0
+Copyright (C) 2016 Charlie Poole
+
+Runtime Environment
+   OS Version: Microsoft Windows NT 10.0.14393.0
+  CLR Version: 4.0.30319.42000
+
+Test Files
+    C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestAutomation.QAWorks.Web.Test\bin\Debug\TestAutomation.QAWorks.Web.Test.dll
+
+Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 61816
+Only local connections are allowed.
+Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 61815
+Only local connections are allowed.
+Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 61982
+Only local connections are allowed.
+1483916901200   geckodriver     INFO    Listening on 127.0.0.1:61984
+1483916902217   mozprofile::profile     INFO    Using profile path C:\Users\arvin\AppData\Local\Temp\rust_mozprofile.OJZKAkz69N9d
+1483916902419   geckodriver::marionette INFO    Starting browser C:\Program Files (x86)\Mozilla Firefox\Firefox.exe
+1483916902433   geckodriver::marionette INFO    Connecting to Marionette on localhost:61995
+Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 62232
+Only local connections are allowed.
+Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 62307
+Only local connections are allowed.
+Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 62380
+Only local connections are allowed.
+Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 62454
+Only local connections are allowed.
+Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 62535
+Only local connections are allowed.
+Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 62611
+Only local connections are allowed.
+Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 62689
+Only local connections are allowed.
+Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 62767
+Only local connections are allowed.
+
+Errors and Failures
+
+1) Error : TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.CanNotSubmitWithInvalidEmailAddress
+OpenQA.Selenium.NoSuchElementException : Could not find element by: By.CssSelector: #main
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.get_Text()
+   at TestAutomation.QAWorks.Web.Pages.PageObjects.PostSubmissionPage.ReadPage() in C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestAutomation.QAWorks.Web.Pages\PageObjects\PostSubmissionPage.cs:line 21
+   at TestAutomation.QAWorks.Web.Steps.StepBindings.PostSubmissionSteps.checkMessageinPostSubmissionPage(String message) in C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestAutomation.QAWorks.Web.Steps\StepBindings\PostSubmissionSteps.cs:line 46
+   at TestAutomation.QAWorks.Web.Steps.StepBindings.PostSubmissionSteps.ThenIShouldSeeFollowingError(String errormessage) in C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestAutomation.QAWorks.Web.Steps\StepBindings\PostSubmissionSteps.cs:line 40
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.ScenarioCleanup()
+   at TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.CanNotSubmitWithInvalidEmailAddress() in C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestAutomation.QAWorks.Web.Test\Features\ContactPage.feature:line 64
+
+2) Failed : TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.ThankYouMessageIsDisplayedAfterSuccessfulSubmission
+  Thank You is not displayed after submission
+  Expected: True
+  But was:  False
+at TestAutomation.QAWorks.Web.Steps.StepBindings.PostSubmissionSteps.ThenThankYouMessageShouldBeDisplayed() in C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestAutomation.QAWorks.Web.Steps\StepBindings\PostSubmissionSteps.cs:line 34
+at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+at TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.ScenarioCleanup()
+at TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.ThankYouMessageIsDisplayedAfterSuccessfulSubmission() in C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestAutomation.QAWorks.Web.Test\Features\ContactPage.feature:line 15
+
+Run Settings
+    DisposeRunners: True
+    WorkDirectory: C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestExecutionResult
+    ImageRuntimeVersion: 4.0.30319
+    ImageTargetFrameworkName: .NETFramework,Version=v4.5.2
+    ImageRequiresX86: False
+    ImageRequiresDefaultAppDomainAssemblyResolver: False
+    NumberOfTestWorkers: 4
+
+Test Run Summary
+  Overall result: Failed
+  Test Count: 12, Passed: 10, Failed: 2, Inconclusive: 0, Skipped: 0
+    Failed Tests - Failures: 1, Errors: 1, Invalid: 0
+  Start time: 2017-01-08 23:07:59Z
+    End time: 2017-01-08 23:10:03Z
+    Duration: 123.115 seconds
+
+Results (nunit3) saved as nunit2
+
+C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestExecutionResult>

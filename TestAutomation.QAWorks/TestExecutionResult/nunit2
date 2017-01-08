@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="12" result="Failed" total="12" passed="10" failed="2" inconclusive="0" skipped="0" asserts="15" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2017-01-08 23:07:59Z" end-time="2017-01-08 23:10:03Z" duration="123.114697">
+  <command-line><![CDATA["C:\Users\arvin\Google Drive\VisualStudioSolutions\YourLogo\packages\NUnit.ConsoleRunner.3.5.0\tools\nunit3-console"  "C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestAutomation.QAWorks.Web.Test\bin\Debug\TestAutomation.QAWorks.Web.Test.dll" --labels=On --out=TestResult.txt --result=nunit2]]></command-line>
+  <test-suite type="Assembly" id="0-1016" name="TestAutomation.QAWorks.Web.Test.dll" fullname="C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestAutomation.QAWorks.Web.Test\bin\Debug\TestAutomation.QAWorks.Web.Test.dll" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2017-01-08 23:08:00Z" end-time="2017-01-08 23:10:03Z" duration="123.029977" total="12" passed="10" failed="2" inconclusive="0" skipped="0" asserts="15">
+    <environment framework-version="3.0.5797.27534" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.14393.0" platform="Win32NT" cwd="C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestExecutionResult" machine-name="DESKTOP-LQJKLPS" user="arvin" user-domain="DESKTOP-LQJKLPS" culture="en-GB" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestExecutionResult" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.5.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="ParallelScope" value="Fixtures" />
+      <property name="_PID" value="10116" />
+      <property name="_APPDOMAIN" value="test-domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1017" name="TestAutomation" fullname="TestAutomation" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2017-01-08 23:08:00Z" end-time="2017-01-08 23:10:03Z" duration="123.020264" total="12" passed="10" failed="2" inconclusive="0" skipped="0" asserts="15">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="0-1018" name="QAWorks" fullname="TestAutomation.QAWorks" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2017-01-08 23:08:00Z" end-time="2017-01-08 23:10:03Z" duration="123.019959" total="12" passed="10" failed="2" inconclusive="0" skipped="0" asserts="15">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="0-1019" name="Web" fullname="TestAutomation.QAWorks.Web" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2017-01-08 23:08:00Z" end-time="2017-01-08 23:10:03Z" duration="123.019215" total="12" passed="10" failed="2" inconclusive="0" skipped="0" asserts="15">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="0-1020" name="Test" fullname="TestAutomation.QAWorks.Web.Test" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2017-01-08 23:08:00Z" end-time="2017-01-08 23:10:03Z" duration="123.018842" total="12" passed="10" failed="2" inconclusive="0" skipped="0" asserts="15">
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestSuite" id="0-1021" name="Features" fullname="TestAutomation.QAWorks.Web.Test.Features" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2017-01-08 23:08:00Z" end-time="2017-01-08 23:10:03Z" duration="123.016867" total="12" passed="10" failed="2" inconclusive="0" skipped="0" asserts="15">
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-suite type="TestFixture" id="0-1012" name="MultipleBrowserFeature" fullname="TestAutomation.QAWorks.Web.Test.Features.MultipleBrowserFeature" classname="TestAutomation.QAWorks.Web.Test.Features.MultipleBrowserFeature" runstate="Runnable" testcasecount="2" result="Passed" start-time="2017-01-08 23:08:00Z" end-time="2017-01-08 23:08:36Z" duration="36.028087" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="4">
+                <properties>
+                  <property name="Description" value="MultipleBrowser" />
+                </properties>
+                <test-suite type="ParameterizedMethod" id="0-1014" name="ValidSubmissionUsingChrome" fullname="TestAutomation.QAWorks.Web.Test.Features.MultipleBrowserFeature.ValidSubmissionUsingChrome" runstate="Runnable" testcasecount="1" result="Passed" start-time="2017-01-08 23:08:00Z" end-time="2017-01-08 23:08:20Z" duration="19.426896" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="2">
+                  <properties>
+                    <property name="Description" value="Valid Submission Using Chrome" />
+                    <property name="Category" value="001" />
+                    <property name="Category" value="Chrome" />
+                  </properties>
+                  <test-case id="0-1013" name="ValidSubmissionUsingChrome(&quot;j.Bloggs&quot;,&quot;j.Bloggs@qaworks.com&quot;,&quot;please contact me I want to find out ...&quot;,System.String[])" fullname="TestAutomation.QAWorks.Web.Test.Features.MultipleBrowserFeature.ValidSubmissionUsingChrome(&quot;j.Bloggs&quot;,&quot;j.Bloggs@qaworks.com&quot;,&quot;please contact me I want to find out ...&quot;,System.String[])" methodname="ValidSubmissionUsingChrome" classname="TestAutomation.QAWorks.Web.Test.Features.MultipleBrowserFeature" runstate="Runnable" seed="1096460943" result="Passed" start-time="2017-01-08 23:08:00Z" end-time="2017-01-08 23:08:20Z" duration="19.418285" asserts="2">
+                    <output><![CDATA[Entered contact details
+]]></output>
+                  </test-case>
+                </test-suite>
+                <test-case id="0-1015" name="ValidSubmissionUsingFireFox" fullname="TestAutomation.QAWorks.Web.Test.Features.MultipleBrowserFeature.ValidSubmissionUsingFireFox" methodname="ValidSubmissionUsingFireFox" classname="TestAutomation.QAWorks.Web.Test.Features.MultipleBrowserFeature" runstate="Runnable" seed="703520303" result="Passed" start-time="2017-01-08 23:08:20Z" end-time="2017-01-08 23:08:36Z" duration="15.933916" asserts="2">
+                  <properties>
+                    <property name="Description" value="Valid Submission Using FireFox" />
+                    <property name="Category" value="002" />
+                    <property name="Category" value="FireFox" />
+                  </properties>
+                  <output><![CDATA[Entered contact details
+]]></output>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1000" name="ContactPageFeature" fullname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature" classname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2017-01-08 23:08:00Z" end-time="2017-01-08 23:10:03Z" duration="123.006896" total="10" passed="8" failed="2" inconclusive="0" skipped="0" asserts="11">
+                <properties>
+                  <property name="Description" value="ContactPage" />
+                  <property name="Category" value="Chrome" />
+                </properties>
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-case id="0-1010" name="AllFieldsShouldBeClearedAfterSubmission" fullname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.AllFieldsShouldBeClearedAfterSubmission" methodname="AllFieldsShouldBeClearedAfterSubmission" classname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature" runstate="Runnable" seed="1272539657" result="Passed" start-time="2017-01-08 23:08:00Z" end-time="2017-01-08 23:08:19Z" duration="19.245773" asserts="2">
+                  <properties>
+                    <property name="Description" value="All Fields should be cleared after submission" />
+                    <property name="Category" value="010" />
+                  </properties>
+                  <output><![CDATA[#12: Given I'm using Chrome
+#10: Given I'm using Chrome
+-> #10: duration: DriverSteps.GivenImUsing(Chrome): 5.4s
+-> #10: done: DriverSteps.GivenImUsing(Chrome) (5.4s)
+-> #10: duration: Hooks.RegisterChromeDriver(): 5.6s
+#10: Given I'm on the QAWorks website
+-> #12: duration: DriverSteps.GivenImUsing(Chrome): 5.5s
+-> #12: done: DriverSteps.GivenImUsing(Chrome) (5.5s)
+-> #12: duration: Hooks.RegisterChromeDriver(): 5.6s
+#12: Given I'm on the QAWorks website
+-> #12: duration: HomeSteps.GivenIMOnTheQAWorksWebsite(): 3.0s
+-> #12: done: HomeSteps.GivenIMOnTheQAWorksWebsite() (3.0s)
+#12: When I contact QAWorks
+-> #10: duration: HomeSteps.GivenIMOnTheQAWorksWebsite(): 3.0s
+-> #10: done: HomeSteps.GivenIMOnTheQAWorksWebsite() (3.0s)
+#12: When I contact QAWorks with the following information
+  --- table step argument ---
+  | Name     | Email                | Messsage         |
+  | j.Bloggs | j.Bloggs@qaworks.com | Messsage to send |
+#10: When I contact QAWorks with the following information
+  --- table step argument ---
+  | Field    | Value                                     |
+  | Name     | j.Bloggs                                  |
+  | Email    | j.Bloggs@qaworks.com                      |
+  | Messsage | please contact me I want to find out more |
+Entered contact details
+-> #12: duration: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>): 9.7s
+-> #12: done: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>) (9.7s)
+-> #12: duration: ContactSteps.WhenIContactQAWorks(): 9.7s
+-> #12: done: ContactSteps.WhenIContactQAWorks() (9.7s)
+#12: Then Information should be Submitted Successfully
+-> #12: duration: PostSubmissionSteps.ThenInformationShouldBeSubmittedSuccessfully(): 0.1s
+-> #12: done: PostSubmissionSteps.ThenInformationShouldBeSubmittedSuccessfully() (0.1s)
+#12: And All fields should be cleared
+-> #10: duration: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>): 9.9s
+-> #10: done: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>) (9.9s)
+#10: Then Information should be Submitted Successfully
+-> #10: duration: PostSubmissionSteps.ThenInformationShouldBeSubmittedSuccessfully(): 0.1s
+-> #10: done: PostSubmissionSteps.ThenInformationShouldBeSubmittedSuccessfully() (0.1s)
+#10: And All fields should be cleared
+-> #12: duration: PostSubmissionSteps.ThenAllFieldsShouldBeCleared(): 0.2s
+-> #12: done: PostSubmissionSteps.ThenAllFieldsShouldBeCleared() (0.2s)
+-> #12: duration: Scenario: All Fields should be cleared after submission: 18.7s
+#12: Given I take a screenshot
+-> #12: error: The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details.
+-> #10: duration: PostSubmissionSteps.ThenAllFieldsShouldBeCleared(): 0.5s
+-> #10: done: PostSubmissionSteps.ThenAllFieldsShouldBeCleared() (0.5s)
+-> #10: duration: Scenario: Valid Submission Using Chrome: 19.2s
+#10: Given I take a screenshot
+-> #10: error: The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details.
+-> #12: duration: Hooks.DisposeWebDriver(): 0.5s
+#12: Given I'm using Chrome
+-> #10: duration: Hooks.DisposeWebDriver(): 0.2s
+#10: Given I'm using FireFox
+-> #12: duration: DriverSteps.GivenImUsing(Chrome): 4.3s
+-> #12: done: DriverSteps.GivenImUsing(Chrome) (4.3s)
+-> #12: duration: Hooks.RegisterChromeDriver(): 4.3s
+#12: Given I'm on the QAWorks website
+-> #10: duration: DriverSteps.GivenImUsing(FireFox): 5.7s
+-> #10: done: DriverSteps.GivenImUsing(FireFox) (5.7s)
+-> #10: duration: Hooks.RegisterFireFoxDriver(): 5.7s
+#10: Given I'm on the QAWorks website
+-> #12: duration: HomeSteps.GivenIMOnTheQAWorksWebsite(): 2.6s
+-> #12: done: HomeSteps.GivenIMOnTheQAWorksWebsite() (2.6s)
+#12: When I contact QAWorks with the following information
+  --- table step argument ---
+  | Field    | Value             |
+  | Name     | j.Bloggs          |
+  | Email    | j.Bloggs          |
+  | Messsage | please contact me |
+-> #10: duration: HomeSteps.GivenIMOnTheQAWorksWebsite(): 3.3s
+-> #10: done: HomeSteps.GivenIMOnTheQAWorksWebsite() (3.3s)
+#10: When I contact QAWorks with the following information
+  --- table step argument ---
+  | Field    | Value                |
+  | Name     | j.Bloggs             |
+  | Email    | j.Bloggs@qaworks.com |
+  | Messsage | please contact me    |
+-> #10: duration: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>): 4.6s
+-> #10: done: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>) (4.6s)
+#10: Then Information should be Submitted Successfully
+-> #10: done: PostSubmissionSteps.ThenInformationShouldBeSubmittedSuccessfully() (0.0s)
+#10: And All fields should be cleared
+-> #10: done: PostSubmissionSteps.ThenAllFieldsShouldBeCleared() (0.1s)
+-> #10: duration: Scenario: Valid Submission Using FireFox: 13.7s
+#10: Given I take a screenshot
+-> #10: error: The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details.
+-> #12: duration: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>): 8.5s
+-> #12: done: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>) (8.5s)
+#12: Then I should see following error Invalid Email Address
+-> #10: duration: Hooks.DisposeWebDriver(): 2.2s
+-> #10: duration: Feature: MultipleBrowser: 35.4s
+-> #12: error: Could not find element by: By.CssSelector: #main
+-> #12: duration: Scenario: Can Not Submit with Invalid Email Address: 25.5s
+#12: Given I take a screenshot
+-> #12: skipped because of previous errors
+-> #12: duration: Hooks.DisposeWebDriver(): 0.2s
+#12: Given I'm using Chrome
+-> #12: duration: DriverSteps.GivenImUsing(Chrome): 3.9s
+-> #12: done: DriverSteps.GivenImUsing(Chrome) (3.9s)
+-> #12: duration: Hooks.RegisterChromeDriver(): 3.9s
+#12: Given I'm on the QAWorks website
+-> #12: duration: HomeSteps.GivenIMOnTheQAWorksWebsite(): 1.8s
+-> #12: done: HomeSteps.GivenIMOnTheQAWorksWebsite() (1.8s)
+#12: When I accidentally leave Email field empty
+#12: When I contact QAWorks with the following information
+  --- table step argument ---
+  | Name     | Email | Messsage         |
+  | j.Bloggs |       | Messsage to send |
+-> #12: duration: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>): 2.8s
+-> #12: done: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>) (2.8s)
+-> #12: duration: ContactSteps.WhenIAccidentallyLeaveFieldEmpty("Email"): 2.8s
+-> #12: done: ContactSteps.WhenIAccidentallyLeaveFieldEmpty("Email") (2.8s)
+#12: Then I should see following error An Email address is required
+-> #12: duration: PostSubmissionSteps.ThenIShouldSeeFollowingError("An Email address ..."): 0.1s
+-> #12: done: PostSubmissionSteps.ThenIShouldSeeFollowingError("An Email address ...") (0.1s)
+-> #12: duration: Scenario: Can Not Submit without Email: 8.7s
+#12: Given I take a screenshot
+-> #12: error: The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details.
+-> #12: duration: Hooks.DisposeWebDriver(): 0.2s
+#12: Given I'm using Chrome
+-> #12: duration: DriverSteps.GivenImUsing(Chrome): 3.8s
+-> #12: done: DriverSteps.GivenImUsing(Chrome) (3.8s)
+-> #12: duration: Hooks.RegisterChromeDriver(): 3.8s
+#12: Given I'm on the QAWorks website
+-> #12: duration: HomeSteps.GivenIMOnTheQAWorksWebsite(): 1.8s
+-> #12: done: HomeSteps.GivenIMOnTheQAWorksWebsite() (1.8s)
+#12: When I accidentally leave Message field empty
+#12: When I contact QAWorks with the following information
+  --- table step argument ---
+  | Name     | Email                | Messsage |
+  | j.Bloggs | j.Bloggs@qaworks.com |          |
+-> #12: duration: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>): 2.7s
+-> #12: done: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>) (2.7s)
+-> #12: duration: ContactSteps.WhenIAccidentallyLeaveFieldEmpty("Message"): 2.7s
+-> #12: done: ContactSteps.WhenIAccidentallyLeaveFieldEmpty("Message") (2.7s)
+#12: Then I should see following error Please type your message
+-> #12: duration: PostSubmissionSteps.ThenIShouldSeeFollowingError("Please type your ..."): 0.1s
+-> #12: done: PostSubmissionSteps.ThenIShouldSeeFollowingError("Please type your ...") (0.1s)
+-> #12: duration: Scenario: Can Not Submit without Message: 8.6s
+#12: Given I take a screenshot
+-> #12: error: The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details.
+-> #12: duration: Hooks.DisposeWebDriver(): 0.3s
+#12: Given I'm using Chrome
+-> #12: duration: DriverSteps.GivenImUsing(Chrome): 3.7s
+-> #12: done: DriverSteps.GivenImUsing(Chrome) (3.7s)
+-> #12: duration: Hooks.RegisterChromeDriver(): 3.7s
+#12: Given I'm on the QAWorks website
+-> #12: duration: HomeSteps.GivenIMOnTheQAWorksWebsite(): 2.0s
+-> #12: done: HomeSteps.GivenIMOnTheQAWorksWebsite() (2.0s)
+#12: When I accidentally leave Name field empty
+#12: When I contact QAWorks with the following information
+  --- table step argument ---
+  | Name | Email                | Messsage         |
+  |      | j.Bloggs@qaworks.com | Messsage to send |
+-> #12: duration: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>): 2.7s
+-> #12: done: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>) (2.7s)
+-> #12: duration: ContactSteps.WhenIAccidentallyLeaveFieldEmpty("Name"): 2.7s
+-> #12: done: ContactSteps.WhenIAccidentallyLeaveFieldEmpty("Name") (2.7s)
+#12: Then I should see following error Your name is required
+-> #12: duration: PostSubmissionSteps.ThenIShouldSeeFollowingError("Your name is requ..."): 0.1s
+-> #12: done: PostSubmissionSteps.ThenIShouldSeeFollowingError("Your name is requ...") (0.1s)
+-> #12: duration: Scenario: Can Not Submit without Name: 8.6s
+#12: Given I take a screenshot
+-> #12: error: The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details.
+-> #12: duration: Hooks.DisposeWebDriver(): 0.2s
+#12: Given I'm using Chrome
+-> #12: duration: DriverSteps.GivenImUsing(Chrome): 3.8s
+-> #12: done: DriverSteps.GivenImUsing(Chrome) (3.8s)
+-> #12: duration: Hooks.RegisterChromeDriver(): 3.8s
+#12: Given I'm on the QAWorks website
+-> #12: duration: HomeSteps.GivenIMOnTheQAWorksWebsite(): 2.0s
+-> #12: done: HomeSteps.GivenIMOnTheQAWorksWebsite() (2.0s)
+#12: When I contact QAWorks using multiple email address
+#12: When I contact QAWorks with the following information
+  --- table step argument ---
+  | Name     | Email                                       | Messsage         |
+  | j.Bloggs | j.Bloggs@qaworks.com,groupemail@qaworks.com | Messsage to send |
+-> #12: duration: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>): 4.2s
+-> #12: done: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>) (4.2s)
+-> #12: duration: ContactSteps.WhenIContactQAWorksUsingMultipleEmailAddress(): 4.2s
+-> #12: done: ContactSteps.WhenIContactQAWorksUsingMultipleEmailAddress() (4.2s)
+#12: Then Information should be Submitted Successfully
+-> #12: done: PostSubmissionSteps.ThenInformationShouldBeSubmittedSuccessfully() (0.1s)
+#12: And All fields should be cleared
+-> #12: duration: PostSubmissionSteps.ThenAllFieldsShouldBeCleared(): 0.1s
+-> #12: done: PostSubmissionSteps.ThenAllFieldsShouldBeCleared() (0.1s)
+-> #12: duration: Scenario: Can Submit multiple email address: 10.2s
+#12: Given I take a screenshot
+-> #12: error: The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details.
+-> #12: duration: Hooks.DisposeWebDriver(): 0.2s
+#12: Given I'm using Chrome
+-> #12: duration: DriverSteps.GivenImUsing(Chrome): 3.8s
+-> #12: done: DriverSteps.GivenImUsing(Chrome) (3.8s)
+-> #12: duration: Hooks.RegisterChromeDriver(): 3.8s
+#12: Given I'm on the QAWorks website
+-> #12: duration: HomeSteps.GivenIMOnTheQAWorksWebsite(): 2.2s
+-> #12: done: HomeSteps.GivenIMOnTheQAWorksWebsite() (2.2s)
+#12: When I contact QAWorks with the following information
+  --- table step argument ---
+  | Field    | Value                |
+  | Name     | j.Bloggs             |
+  | Email    | j.Bloggs@qaworks.com |
+  | Messsage | please contact me    |
+-> #12: duration: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>): 4.4s
+-> #12: done: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>) (4.4s)
+#12: Then Thank you message should be displayed
+-> #12: error:   Thank You is not displayed after submission
+  Expected: True
+  But was:  False
+
+-> #12: duration: Scenario: Thank You Message is displayed after Successful Submission: 10.6s
+#12: Given I take a screenshot
+-> #12: skipped because of previous errors
+-> #12: duration: Hooks.DisposeWebDriver(): 0.2s
+#12: Given I'm using Chrome
+-> #12: duration: DriverSteps.GivenImUsing(Chrome): 4.0s
+-> #12: done: DriverSteps.GivenImUsing(Chrome) (4.0s)
+-> #12: duration: Hooks.RegisterChromeDriver(): 4.0s
+#12: Given I'm on the QAWorks website
+-> #12: duration: HomeSteps.GivenIMOnTheQAWorksWebsite(): 2.0s
+-> #12: done: HomeSteps.GivenIMOnTheQAWorksWebsite() (2.0s)
+#12: When I contact QAWorks with the following information
+  --- table step argument ---
+  | Field    | Value                                                         |
+  | Name     | Albert Jêan                                                   |
+  | Email    | Albert.Jêan@qaworks.com                                       |
+  | Messsage | Myself Jêan, Souhaite en savoir plus sur les services QAWorks |
+-> #12: duration: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>): 4.6s
+-> #12: done: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>) (4.6s)
+#12: Then Information should be Submitted Successfully
+-> #12: done: PostSubmissionSteps.ThenInformationShouldBeSubmittedSuccessfully() (0.1s)
+-> #12: duration: Scenario: Valid Submission Using Foreign Languages: 10.6s
+#12: Given I take a screenshot
+-> #12: error: The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details.
+-> #12: duration: Hooks.DisposeWebDriver(): 0.2s
+#12: Given I'm using Chrome
+-> #12: duration: DriverSteps.GivenImUsing(Chrome): 3.7s
+-> #12: done: DriverSteps.GivenImUsing(Chrome) (3.7s)
+-> #12: duration: Hooks.RegisterChromeDriver(): 3.7s
+#12: Given I'm on the QAWorks website
+-> #12: duration: HomeSteps.GivenIMOnTheQAWorksWebsite(): 1.7s
+-> #12: done: HomeSteps.GivenIMOnTheQAWorksWebsite() (1.7s)
+#12: When I contact QAWorks with the following information
+  --- table step argument ---
+  | Field    | Value      |
+  | Name     | 伟 张        |
+  | Email    | 伟.张@QQ.com |
+  | Messsage | 请联系我       |
+-> #12: duration: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>): 4.1s
+-> #12: done: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>) (4.1s)
+#12: Then Information should be Submitted Successfully
+-> #12: done: PostSubmissionSteps.ThenInformationShouldBeSubmittedSuccessfully() (0.1s)
+-> #12: duration: Scenario: Valid Submission Using Foreign Languages: 9.6s
+#12: Given I take a screenshot
+-> #12: error: The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details.
+-> #12: duration: Hooks.DisposeWebDriver(): 0.2s
+#12: Given I'm using Chrome
+-> #12: duration: DriverSteps.GivenImUsing(Chrome): 3.9s
+-> #12: done: DriverSteps.GivenImUsing(Chrome) (3.9s)
+-> #12: duration: Hooks.RegisterChromeDriver(): 3.9s
+#12: Given I'm on the QAWorks website
+-> #12: duration: HomeSteps.GivenIMOnTheQAWorksWebsite(): 1.7s
+-> #12: done: HomeSteps.GivenIMOnTheQAWorksWebsite() (1.7s)
+#12: When I accidentally enter an invalid email address
+-> #12: duration: ContactSteps.WhenIAccidentallyEnterAnInvalidEmailAddress(): 2.9s
+-> #12: done: ContactSteps.WhenIAccidentallyEnterAnInvalidEmailAddress() (2.9s)
+#12: Then I should see following error Invalid Email Address
+-> #12: duration: PostSubmissionSteps.ThenIShouldSeeFollowingError("Invalid Email Add..."): 0.2s
+-> #12: done: PostSubmissionSteps.ThenIShouldSeeFollowingError("Invalid Email Add...") (0.2s)
+-> #12: duration: Scenario: Warning message is displayed when I enter an Invalid Email address: 8.7s
+#12: Given I take a screenshot
+-> #12: error: The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details.
+-> #12: duration: Hooks.DisposeWebDriver(): 0.2s
+-> #12: duration: Feature: ContactPage: 122.4s
+]]></output>
+                </test-case>
+                <test-case id="0-1009" name="CanNotSubmitWithInvalidEmailAddress" fullname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.CanNotSubmitWithInvalidEmailAddress" methodname="CanNotSubmitWithInvalidEmailAddress" classname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature" runstate="Runnable" seed="1778333889" result="Failed" label="Error" start-time="2017-01-08 23:08:20Z" end-time="2017-01-08 23:08:45Z" duration="25.651178" asserts="0">
+                  <properties>
+                    <property name="Description" value="Can Not Submit with Invalid Email Address" />
+                    <property name="Category" value="009" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Could not find element by: By.CssSelector: #main]]></message>
+                    <stack-trace><![CDATA[   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.get_Text()
+   at TestAutomation.QAWorks.Web.Pages.PageObjects.PostSubmissionPage.ReadPage() in C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestAutomation.QAWorks.Web.Pages\PageObjects\PostSubmissionPage.cs:line 21
+   at TestAutomation.QAWorks.Web.Steps.StepBindings.PostSubmissionSteps.checkMessageinPostSubmissionPage(String message) in C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestAutomation.QAWorks.Web.Steps\StepBindings\PostSubmissionSteps.cs:line 46
+   at TestAutomation.QAWorks.Web.Steps.StepBindings.PostSubmissionSteps.ThenIShouldSeeFollowingError(String errormessage) in C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestAutomation.QAWorks.Web.Steps\StepBindings\PostSubmissionSteps.cs:line 40
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.ScenarioCleanup()
+   at TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.CanNotSubmitWithInvalidEmailAddress() in C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestAutomation.QAWorks.Web.Test\Features\ContactPage.feature:line 64]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[Entered contact details
+]]></output>
+                </test-case>
+                <test-case id="0-1006" name="CanNotSubmitWithoutEmail" fullname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.CanNotSubmitWithoutEmail" methodname="CanNotSubmitWithoutEmail" classname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature" runstate="Runnable" seed="2113917196" result="Passed" start-time="2017-01-08 23:08:45Z" end-time="2017-01-08 23:08:54Z" duration="8.842664" asserts="1">
+                  <properties>
+                    <property name="Description" value="Can Not Submit without Email" />
+                    <property name="Category" value="006" />
+                  </properties>
+                  <output><![CDATA[Entered contact details
+]]></output>
+                </test-case>
+                <test-case id="0-1007" name="CanNotSubmitWithoutMessage" fullname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.CanNotSubmitWithoutMessage" methodname="CanNotSubmitWithoutMessage" classname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature" runstate="Runnable" seed="1460656856" result="Passed" start-time="2017-01-08 23:08:54Z" end-time="2017-01-08 23:09:03Z" duration="8.835368" asserts="1">
+                  <properties>
+                    <property name="Description" value="Can Not Submit without Message" />
+                    <property name="Category" value="007" />
+                  </properties>
+                  <output><![CDATA[Entered contact details
+]]></output>
+                </test-case>
+                <test-case id="0-1005" name="CanNotSubmitWithoutName" fullname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.CanNotSubmitWithoutName" methodname="CanNotSubmitWithoutName" classname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature" runstate="Runnable" seed="332551961" result="Passed" start-time="2017-01-08 23:09:03Z" end-time="2017-01-08 23:09:12Z" duration="8.754156" asserts="1">
+                  <properties>
+                    <property name="Description" value="Can Not Submit without Name" />
+                    <property name="Category" value="005" />
+                  </properties>
+                  <output><![CDATA[Entered contact details
+]]></output>
+                </test-case>
+                <test-case id="0-1011" name="CanSubmitMultipleEmailAddress" fullname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.CanSubmitMultipleEmailAddress" methodname="CanSubmitMultipleEmailAddress" classname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature" runstate="Runnable" seed="118089422" result="Passed" start-time="2017-01-08 23:09:12Z" end-time="2017-01-08 23:09:22Z" duration="10.416038" asserts="2">
+                  <properties>
+                    <property name="Description" value="Can Submit multiple email address" />
+                    <property name="Category" value="011" />
+                  </properties>
+                  <output><![CDATA[Entered contact details
+]]></output>
+                </test-case>
+                <test-case id="0-1001" name="ThankYouMessageIsDisplayedAfterSuccessfulSubmission" fullname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.ThankYouMessageIsDisplayedAfterSuccessfulSubmission" methodname="ThankYouMessageIsDisplayedAfterSuccessfulSubmission" classname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature" runstate="Runnable" seed="798259755" result="Failed" start-time="2017-01-08 23:09:22Z" end-time="2017-01-08 23:09:33Z" duration="10.814759" asserts="1">
+                  <properties>
+                    <property name="Description" value="Thank You Message is displayed after Successful Submission" />
+                    <property name="Category" value="003" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[  Thank You is not displayed after submission
+  Expected: True
+  But was:  False
+]]></message>
+                    <stack-trace><![CDATA[at TestAutomation.QAWorks.Web.Steps.StepBindings.PostSubmissionSteps.ThenThankYouMessageShouldBeDisplayed() in C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestAutomation.QAWorks.Web.Steps\StepBindings\PostSubmissionSteps.cs:line 34
+at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+at TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.ScenarioCleanup()
+at TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.ThankYouMessageIsDisplayedAfterSuccessfulSubmission() in C:\Users\arvin\Documents\GitHub\TestAutomation.DEMO\TestAutomation.QAWorks\TestAutomation.QAWorks.Web.Test\Features\ContactPage.feature:line 15
+]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[Entered contact details
+]]></output>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="0-1004" name="ValidSubmissionUsingForeignLanguages" fullname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.ValidSubmissionUsingForeignLanguages" runstate="Runnable" testcasecount="2" result="Passed" start-time="2017-01-08 23:09:33Z" end-time="2017-01-08 23:09:54Z" duration="20.585851" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="2">
+                  <properties>
+                    <property name="Description" value="Valid Submission Using Foreign Languages" />
+                    <property name="Category" value="004" />
+                  </properties>
+                  <test-case id="0-1002" name="ValidSubmissionUsingForeignLanguages(&quot;Albert Jêan&quot;,&quot;Albert.Jêan@qaworks.com&quot;,&quot;Myself Jêan, Souhaite en savoir plus ...&quot;,System.String[])" fullname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.ValidSubmissionUsingForeignLanguages(&quot;Albert Jêan&quot;,&quot;Albert.Jêan@qaworks.com&quot;,&quot;Myself Jêan, Souhaite en savoir plus ...&quot;,System.String[])" methodname="ValidSubmissionUsingForeignLanguages" classname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature" runstate="Runnable" seed="1630670862" result="Passed" start-time="2017-01-08 23:09:33Z" end-time="2017-01-08 23:09:44Z" duration="10.838537" asserts="1">
+                    <output><![CDATA[Entered contact details
+]]></output>
+                  </test-case>
+                  <test-case id="0-1003" name="ValidSubmissionUsingForeignLanguages(&quot;伟 张&quot;,&quot;伟.张@QQ.com&quot;,&quot;请联系我&quot;,System.String[])" fullname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.ValidSubmissionUsingForeignLanguages(&quot;伟 张&quot;,&quot;伟.张@QQ.com&quot;,&quot;请联系我&quot;,System.String[])" methodname="ValidSubmissionUsingForeignLanguages" classname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature" runstate="Runnable" seed="575529885" result="Passed" start-time="2017-01-08 23:09:44Z" end-time="2017-01-08 23:09:54Z" duration="9.736908" asserts="1">
+                    <output><![CDATA[Entered contact details
+]]></output>
+                  </test-case>
+                </test-suite>
+                <test-case id="0-1008" name="WarningMessageIsDisplayedWhenIEnterAnInvalidEmailAddress" fullname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.WarningMessageIsDisplayedWhenIEnterAnInvalidEmailAddress" methodname="WarningMessageIsDisplayedWhenIEnterAnInvalidEmailAddress" classname="TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature" runstate="Runnable" seed="213326761" result="Passed" start-time="2017-01-08 23:09:54Z" end-time="2017-01-08 23:10:03Z" duration="8.934322" asserts="1">
+                  <properties>
+                    <property name="Description" value="Warning message is displayed when I enter an Invalid Email address" />
+                    <property name="Category" value="008" />
+                  </properties>
+                  <output><![CDATA[Entered contact details
+]]></output>
+                </test-case>
+              </test-suite>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

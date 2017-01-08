@@ -1,0 +1,74 @@
+=> TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.AllFieldsShouldBeClearedAfterSubmission
+#12: Given I'm using Chrome
+#10: Given I'm using Chrome
+-> #10: duration: DriverSteps.GivenImUsing(Chrome): 5.4s
+-> #10: done: DriverSteps.GivenImUsing(Chrome) (5.4s)
+-> #10: duration: Hooks.RegisterChromeDriver(): 5.6s
+#10: Given I'm on the QAWorks website
+-> #12: duration: DriverSteps.GivenImUsing(Chrome): 5.5s
+-> #12: done: DriverSteps.GivenImUsing(Chrome) (5.5s)
+-> #12: duration: Hooks.RegisterChromeDriver(): 5.6s
+#12: Given I'm on the QAWorks website
+-> #12: duration: HomeSteps.GivenIMOnTheQAWorksWebsite(): 3.0s
+-> #12: done: HomeSteps.GivenIMOnTheQAWorksWebsite() (3.0s)
+#12: When I contact QAWorks
+-> #10: duration: HomeSteps.GivenIMOnTheQAWorksWebsite(): 3.0s
+-> #10: done: HomeSteps.GivenIMOnTheQAWorksWebsite() (3.0s)
+#12: When I contact QAWorks with the following information
+  --- table step argument ---
+  | Name     | Email                | Messsage         |
+  | j.Bloggs | j.Bloggs@qaworks.com | Messsage to send |
+#10: When I contact QAWorks with the following information
+  --- table step argument ---
+  | Field    | Value                                     |
+  | Name     | j.Bloggs                                  |
+  | Email    | j.Bloggs@qaworks.com                      |
+  | Messsage | please contact me I want to find out more |
+Entered contact details
+-> #12: duration: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>): 9.7s
+-> #12: done: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>) (9.7s)
+-> #12: duration: ContactSteps.WhenIContactQAWorks(): 9.7s
+-> #12: done: ContactSteps.WhenIContactQAWorks() (9.7s)
+#12: Then Information should be Submitted Successfully
+-> #12: duration: PostSubmissionSteps.ThenInformationShouldBeSubmittedSuccessfully(): 0.1s
+-> #12: done: PostSubmissionSteps.ThenInformationShouldBeSubmittedSuccessfully() (0.1s)
+#12: And All fields should be cleared
+-> #10: duration: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>): 9.9s
+-> #10: done: ContactSteps.WhenIContactQAWorksWithTheFollowingInformation(<table>) (9.9s)
+#10: Then Information should be Submitted Successfully
+-> #10: duration: PostSubmissionSteps.ThenInformationShouldBeSubmittedSuccessfully(): 0.1s
+-> #10: done: PostSubmissionSteps.ThenInformationShouldBeSubmittedSuccessfully() (0.1s)
+#10: And All fields should be cleared
+-> #12: duration: PostSubmissionSteps.ThenAllFieldsShouldBeCleared(): 0.2s
+-> #12: done: PostSubmissionSteps.ThenAllFieldsShouldBeCleared() (0.2s)
+-> #12: duration: Scenario: All Fields should be cleared after submission: 18.7s
+#12: Given I take a screenshot
+-> #12: error: The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details.
+-> #10: duration: PostSubmissionSteps.ThenAllFieldsShouldBeCleared(): 0.5s
+-> #10: done: PostSubmissionSteps.ThenAllFieldsShouldBeCleared() (0.5s)
+-> #10: duration: Scenario: Valid Submission Using Chrome: 19.2s
+#10: Given I take a screenshot
+-> #10: error: The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details.
+-> #12: duration: Hooks.DisposeWebDriver(): 0.5s
+=> TestAutomation.QAWorks.Web.Test.Features.MultipleBrowserFeature.ValidSubmissionUsingChrome("j.Bloggs","j.Bloggs@qaworks.com","please contact me I want to find out ...",System.String[])
+Entered contact details
+=> TestAutomation.QAWorks.Web.Test.Features.MultipleBrowserFeature.ValidSubmissionUsingFireFox
+Entered contact details
+=> TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.CanNotSubmitWithInvalidEmailAddress
+Entered contact details
+=> TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.CanNotSubmitWithoutEmail
+Entered contact details
+=> TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.CanNotSubmitWithoutMessage
+Entered contact details
+=> TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.CanNotSubmitWithoutName
+Entered contact details
+=> TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.CanSubmitMultipleEmailAddress
+Entered contact details
+=> TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.ThankYouMessageIsDisplayedAfterSuccessfulSubmission
+Entered contact details
+=> TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.ValidSubmissionUsingForeignLanguages("Albert Jêan","Albert.Jêan@qaworks.com","Myself Jêan, Souhaite en savoir plus ...",System.String[])
+Entered contact details
+=> TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.ValidSubmissionUsingForeignLanguages("伟 张","伟.张@QQ.com","请联系我",System.String[])
+Entered contact details
+=> TestAutomation.QAWorks.Web.Test.Features.ContactPageFeature.WarningMessageIsDisplayedWhenIEnterAnInvalidEmailAddress
+Entered contact details
