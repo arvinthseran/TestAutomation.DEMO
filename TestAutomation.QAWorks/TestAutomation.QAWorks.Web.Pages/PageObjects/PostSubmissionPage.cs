@@ -13,7 +13,7 @@ namespace TestAutomation.QAWorks.Web.Pages.PageObjects
         [FindsBy(How = How.CssSelector, Using = "#main")]
         private IWebElement mainPage { get; set; }
 
-        [FindsBy(How = How.CssSelector, Using = "#ContactForm")]
+        [FindsBy(How = How.Id, Using = "ContactMessageUs")]
         private IWebElement contactForm { get; set; }
 
         public string ReadPage()

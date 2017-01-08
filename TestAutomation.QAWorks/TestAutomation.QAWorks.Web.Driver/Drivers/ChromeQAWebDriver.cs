@@ -8,7 +8,7 @@ namespace TestAutomation.QAWorks.Web.Driver.Drivers
         private static int _defaultTimeOutinSec = 10;
 
         public ChromeQAWebDriver()
-            : this(AppDomain.CurrentDomain.BaseDirectory, _defaultTimeOutinSec)
+            : this(AppDomain.CurrentDomain.BaseDirectory)
         {
 
         }

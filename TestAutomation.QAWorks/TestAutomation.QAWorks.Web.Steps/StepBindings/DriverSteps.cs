@@ -52,12 +52,12 @@ namespace TestAutomation.QAWorks.Web.Steps.StepBindings
         [Given(@"I take a screenshot")]
         public void GivenITakeAScreenshot()
         {
-           var webDriver= _objectContainer.Resolve<IQAWebDriver>();
+           var webDriver = _objectContainer.Resolve<IQAWebDriver>();
 
             webDriver?.TakeScreenshot(string.Format("{0}{3}-{1}-{2}.jpeg", "C:\\",
                    ScenarioContext.Current.ScenarioInfo.Title.Replace(" ", ""),
                    DateTime.Now.ToString("ddMMyyyyHHmm"),
-                   webDriver.browserName));
+                   webDriver.BrowserName));
         }
 
         [StepArgumentTransformation(@"using (Chrome|FireFox|InternetExplorer|PhantomJS)")]

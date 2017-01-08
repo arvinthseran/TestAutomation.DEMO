@@ -10,8 +10,8 @@ namespace TestAutomation.QAWorks.Web.Pages.PageObjects
 
         public HomePage Navigate(string url)
         {
-            driver.GoToURL(url);
-            return new HomePage(driver);
+            Driver.GoToURL(url);
+            return new HomePage(Driver);
         }
     }
 }

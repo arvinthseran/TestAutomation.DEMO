@@ -12,24 +12,25 @@ namespace TestAutomation.QAWorks.Web.Driver.Drivers
     {
         private readonly int _defaultTimeOutinSec;
 
-        public RemoteWebDriver webDriver { get; set; }
+        public RemoteWebDriver WebDriver { get; set; }
 
         public QAWebDriver(RemoteWebDriver remoteWebDriver, int timeout)
         {
             _defaultTimeOutinSec = timeout;
             remoteWebDriver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(_defaultTimeOutinSec));
             remoteWebDriver.Manage().Timeouts().SetPageLoadTimeout(TimeSpan.FromSeconds(_defaultTimeOutinSec));
-            webDriver = remoteWebDriver;
+            remoteWebDriver.Manage().Window.Maximize();
+            WebDriver = remoteWebDriver;
         }
 
-        public string browserName
+        public string BrowserName
         {
-          get { return webDriver.Capabilities.BrowserName; }   
+          get { return WebDriver.Capabilities.BrowserName; }   
         }
 
-        public void GoToURL(string url)
+        public virtual void GoToURL(string url)
         {
-            webDriver.Navigate().GoToUrl(url);
+            WebDriver.Navigate().GoToUrl(url);
         }
 
         public void Click(IWebElement webelement)
@@ -40,7 +41,7 @@ namespace TestAutomation.QAWorks.Web.Driver.Drivers
 
         public void WaitUntilDocIsReady()
         {
-            var wait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(_defaultTimeOutinSec));
+            var wait = new WebDriverWait(WebDriver, TimeSpan.FromSeconds(_defaultTimeOutinSec));
             wait.Until((webdriver) =>
                (webdriver as IJavaScriptExecutor).ExecuteScript("return document.readyState").Equals("complete")
             );
@@ -51,7 +52,7 @@ namespace TestAutomation.QAWorks.Web.Driver.Drivers
         {
             try
             {
-                var shot = webDriver.TakeScreenshot();
+                var shot = WebDriver.TakeScreenshot();
                 shot.SaveAsFile(filename, ImageFormat.Jpeg);
             }
             catch (Exception screenshotException)
@@ -60,9 +61,9 @@ namespace TestAutomation.QAWorks.Web.Driver.Drivers
             }
         }
 
-        private void WaitforElementTobeDisplayedAndEnabled(IWebElement webelement)
+        internal void WaitforElementTobeDisplayedAndEnabled(IWebElement webelement)
         {
-            var webDriverWait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(_defaultTimeOutinSec));
+            var webDriverWait = new WebDriverWait(WebDriver, TimeSpan.FromSeconds(_defaultTimeOutinSec));
 
             webDriverWait.IgnoreExceptionTypes(typeof(StaleElementReferenceException));
 
@@ -78,7 +79,7 @@ namespace TestAutomation.QAWorks.Web.Driver.Drivers
             {
                 if (disposing)
                 {
-                    webDriver.Dispose();
+                    WebDriver.Dispose();
                 }
 
                 // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.

@@ -11,7 +11,7 @@ namespace TestAutomation.QAWorks.Web.Steps.StepBindings
     {
         private readonly IObjectContainer _objectContainer;
 
-        public static string url;
+        private static string _url;
 
         public Hooks(IObjectContainer objectContainer)
         {
@@ -24,7 +24,7 @@ namespace TestAutomation.QAWorks.Web.Steps.StepBindings
             //We can resolve webdriver instance type using App.Config
             //and pass it as a param from NUNIT console 
             //webDriverInstanceType = ResolveAppConfig.GetDriverType();
-            url = ResolveAppConfig.GetSiteUrl();
+            _url = ResolveAppConfig.GetSiteUrl();
         }
 
         [BeforeFeature]
@@ -35,7 +35,7 @@ namespace TestAutomation.QAWorks.Web.Steps.StepBindings
         [BeforeScenario]
         public void BeforeScenario()
         {
-            _objectContainer.RegisterInstanceAs(new QAWorksUri { MainUrl = url });
+            _objectContainer.RegisterInstanceAs(new QAWorksUri { MainUrl = _url });
         }
 
         [BeforeScenario Scope(Tag = "Chrome")]

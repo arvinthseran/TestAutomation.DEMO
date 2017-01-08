@@ -12,19 +12,16 @@ namespace TestAutomation.QAWorks.Web.Pages.PageObjects
         {
         }
         
-        [FindsBy(How = How.CssSelector, Using ="a.active")]
-        private IWebElement lnkHome { get; set; }
-
         private List<IWebElement> lnkMenus
         {
-            get { return driver.webDriver.FindElementsByCssSelector("li > a").ToList(); }
+            get { return Driver.WebDriver.FindElementsByCssSelector("li > a").ToList(); }
         }
 
         public ContactPage NavigatetoContactPage()
         {
             var contactLink = lnkMenus.FirstOrDefault(x => x.Text == "Contact");
             contactLink.Click();
-            return new ContactPage(driver);
+            return new ContactPage(Driver);
         }
     }
 }

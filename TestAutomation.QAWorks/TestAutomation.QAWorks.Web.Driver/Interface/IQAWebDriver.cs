@@ -12,11 +12,11 @@ namespace TestAutomation.QAWorks.Web.Driver.Interface
         //
         // Summary:
         //      Get or Set the RemoteWebdriver instance.
-        RemoteWebDriver webDriver { get; set; }
+        RemoteWebDriver WebDriver { get; set; }
         //
         // Summary:
         //      Get runtime browser instance name.
-        string browserName { get; }
+        string BrowserName { get; }
         //
         // Summary:
         //     Load a new web page in the current browser window.

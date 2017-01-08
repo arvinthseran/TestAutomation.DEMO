@@ -21,14 +21,14 @@ namespace TestAutomation.QAWorks.Web.Pages.PageObjects
         [FindsBy(How = How.CssSelector, Using = "textarea#ctl00_MainContent_MessageBox")]
         internal IWebElement txtMessageBox { get; set; }
 
-        [FindsBy(How = How.CssSelector, Using = ".SendButton")]
-        private IWebElement _btnSend { get; set; }
+        [FindsBy(How = How.CssSelector, Using = "#ctl00_MainContent_SendButton")]
+        private IWebElement btnSend { get; set; }
 
         public PostSubmissionPage SendAMessage(string name, string email, string message)
         {
             FillContactForm(name, email, message);
-            driver.Click(_btnSend);
-            return new PostSubmissionPage(driver);
+            Driver.Click(btnSend);
+            return new PostSubmissionPage(Driver);
         }
 
         public void FillContactForm(string name, string email, string message)

@@ -6,8 +6,8 @@ namespace TestAutomation.QAWorks.Web.Driver.Drivers
     {
         private static int _defaultTimeOutinSec = 15;
 
-        public FirefoxQAWebDriver()
-            : base(new FirefoxDriver(Options()), _defaultTimeOutinSec)
+        public FirefoxQAWebDriver() 
+            : this(_defaultTimeOutinSec)
         {
         }
 
@@ -24,6 +24,7 @@ namespace TestAutomation.QAWorks.Web.Driver.Drivers
                 EnableNativeEvents = true
             };
             firefoxoptions.SetPreference("accessibility.force_disabled", 1);
+            firefoxoptions.SetPreference("layout.css.devPixelsPerPx", "1.0");
             return firefoxoptions;
         }
     }

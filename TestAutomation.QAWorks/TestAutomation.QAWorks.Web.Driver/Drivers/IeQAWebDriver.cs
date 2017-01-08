@@ -8,7 +8,7 @@ namespace TestAutomation.QAWorks.Web.Driver.Drivers
         private static int _iePageNavigationTimeout = 10;
 
         public IeQAWebDriver() 
-            : this(AppDomain.CurrentDomain.BaseDirectory, _iePageNavigationTimeout)
+            : this(AppDomain.CurrentDomain.BaseDirectory)
         {
         }
 
